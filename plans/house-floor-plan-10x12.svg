@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 1380" width="1180" height="1380">
+  <defs>
+    <style>
+      .title { font: 700 28px "Segoe UI", Arial, sans-serif; fill: #1a1a1a; }
+      .subtitle { font: 400 16px "Segoe UI", Arial, sans-serif; fill: #444; }
+      .room { font: 700 18px "Segoe UI", Arial, sans-serif; fill: #1a1a1a; }
+      .area { font: 400 14px "Segoe UI", Arial, sans-serif; fill: #555; }
+      .dim { font: 600 14px "Segoe UI", Arial, sans-serif; fill: #222; }
+      .note { font: 400 13px "Segoe UI", Arial, sans-serif; fill: #666; }
+      .wall-outer { fill: none; stroke: #111; stroke-width: 14; stroke-linejoin: miter; }
+      .wall-inner { fill: none; stroke: #111; stroke-width: 7; }
+      .furniture { fill: none; stroke: #555; stroke-width: 2; }
+      .furniture-fill { fill: #f0f0f0; stroke: #555; stroke-width: 2; }
+      .door-arc { fill: none; stroke: #777; stroke-width: 1.5; stroke-dasharray: 4 3; }
+      .window { stroke: #4a90c8; stroke-width: 6; }
+      .dim-line { stroke: #333; stroke-width: 1.2; }
+      .hatch { fill: #e8e8e8; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1180" height="1380" fill="#fafafa"/>
+
+  <text x="90" y="48" class="title">;0= 4><0 10 × 12 <</text>
+  <text x="90" y="74" class="subtitle">3 A?0;L=8 · :CE=O-3>AB8=0O · A0=C75; · ?@8E>60O · S = 120 <²</text>
+
+  <!-- Scale: 1 m = 80 px; outer box origin (90, 110), size 800×960 -->
+  <!-- Outer walls 10m × 12m -->
+  <rect x="90" y="110" width="800" height="960" class="hatch"/>
+  <rect x="90" y="110" width="800" height="960" class="wall-outer"/>
+
+  <!-- ===== ROOMS (interior approx after ~0.2 m walls) ===== -->
+  <!-- Coordinate system: x from west, y from north -->
+
+  <!-- Bedroom 1: NW  4.0 × 4.0 m ’ 320×320 px, from (100,120) -->
+  <rect x="100" y="120" width="312" height="312" fill="#fff8f0"/>
+  <text x="256" y="260" text-anchor="middle" class="room">!,/ 1</text>
+  <text x="256" y="282" text-anchor="middle" class="area">4,0 × 4,0 < · 16,0 <²</text>
+  <!-- bed -->
+  <rect x="150" y="160" width="160" height="100" class="furniture-fill" rx="4"/>
+  <text x="230" y="218" text-anchor="middle" class="note">:@>20BL</text>
+  <!-- wardrobe -->
+  <rect x="380" y="140" width="24" height="200" class="furniture-fill"/>
+  <!-- window north -->
+  <line x1="180" y1="110" x2="320" y2="110" class="window"/>
+
+  <!-- Bedroom 2: N center  3.0 × 4.0 m ’ 240×320 -->
+  <rect x="420" y="120" width="232" height="312" fill="#f0f7ff"/>
+  <text x="536" y="260" text-anchor="middle" class="room">!,/ 2</text>
+  <text x="536" y="282" text-anchor="middle" class="area">3,0 × 4,0 < · 12,0 <²</text>
+  <rect x="460" y="160" width="90" height="140" class="furniture-fill" rx="4"/>
+  <line x1="480" y1="110" x2="600" y2="110" class="window"/>
+
+  <!-- Bedroom 3: NE  3.0 × 4.0 m -->
+  <rect x="660" y="120" width="220" height="312" fill="#f0fff4"/>
+  <text x="770" y="260" text-anchor="middle" class="room">!,/ 3</text>
+  <text x="770" y="282" text-anchor="middle" class="area">3,0 × 4,0 < · 12,0 <²</text>
+  <rect x="700" y="160" width="90" height="140" class="furniture-fill" rx="4"/>
+  <line x1="720" y1="110" x2="820" y2="110" class="window"/>
+  <line x1="890" y1="180" x2="890" y2="300" class="window"/>
+
+  <!-- Corridor: 1.2 m wide under bedrooms -->
+  <rect x="420" y="440" width="460" height="96" fill="#f5f5f5"/>
+  <text x="650" y="495" text-anchor="middle" class="room">  </text>
+  <text x="650" y="515" text-anchor="middle" class="area">~5,5 <²</text>
+
+  <!-- Bathroom: SE of corridor area, east side -->
+  <rect x="700" y="544" width="180" height="176" fill="#eef6ff"/>
+  <text x="790" y="620" text-anchor="middle" class="room">!#</text>
+  <text x="790" y="642" text-anchor="middle" class="area">2,2 × 2,2 < · 4,8 <²</text>
+  <!-- fixtures -->
+  <rect x="720" y="560" width="50" height="36" class="furniture-fill" rx="2"/>
+  <circle cx="820" cy="580" r="14" class="furniture"/>
+  <rect x="830" y="640" width="40" height="60" class="furniture-fill" rx="2"/>
+  <line x1="890" y1="580" x2="890" y2="660" class="window"/>
+
+  <!-- Entrance / hall: south-east -->
+  <rect x="700" y="728" width="180" height="332" fill="#fffaf0"/>
+  <text x="790" y="880" text-anchor="middle" class="room"> %/</text>
+  <text x="790" y="902" text-anchor="middle" class="area">2,2 × 4,1 < · 9,0 <²</text>
+  <!-- wardrobe -->
+  <rect x="840" y="760" width="28" height="180" class="furniture-fill"/>
+  <!-- main entrance door (south) -->
+  <path d="M 760 1070 L 760 1010 A 60 60 0 0 1 820 1070" class="door-arc"/>
+  <line x1="760" y1="1070" x2="820" y2="1070" stroke="#111" stroke-width="4"/>
+  <text x="790" y="1095" text-anchor="middle" class="note">2E>4</text>
+
+  <!-- Kitchen-living: large west/south block -->
+  <rect x="100" y="440" width="592" height="620" fill="#fffef5"/>
+  <text x="396" y="720" text-anchor="middle" class="room">#%/-!"/</text>
+  <text x="396" y="744" text-anchor="middle" class="area">7,4 × 7,7 < · H 57 <²</text>
+
+  <!-- kitchen counters along west wall -->
+  <rect x="110" y="460" width="40" height="280" class="furniture-fill"/>
+  <text x="200" y="500" class="note">:CE=O</text>
+  <!-- island -->
+  <rect x="220" y="540" width="140" height="70" class="furniture-fill" rx="4"/>
+  <text x="290" y="580" text-anchor="middle" class="note">>AB@>2</text>
+  <!-- sofa -->
+  <path d="M140 900 h220 v80 h-60 v-40 h-100 v40 h-60 z" class="furniture-fill"/>
+  <text x="250" y="980" text-anchor="middle" class="note">4820=</text>
+  <!-- dining table -->
+  <rect x="400" y="860" width="120" height="70" class="furniture-fill" rx="6"/>
+  <text x="460" y="900" text-anchor="middle" class="note">AB>;</text>
+  <!-- windows west & south living -->
+  <line x1="90" y1="520" x2="90" y2="700" class="window"/>
+  <line x1="90" y1="820" x2="90" y2="980" class="window"/>
+  <line x1="180" y1="1070" x2="400" y2="1070" class="window"/>
+
+  <!-- Inner walls -->
+  <!-- horizontal under bedrooms -->
+  <line x1="97" y1="440" x2="883" y2="440" class="wall-inner"/>
+  <!-- vertical bedroom splits -->
+  <line x1="420" y1="117" x2="420" y2="440" class="wall-inner"/>
+  <line x1="660" y1="117" x2="660" y2="440" class="wall-inner"/>
+  <!-- corridor south wall partial + bathroom / hall / living splits -->
+  <line x1="420" y1="536" x2="883" y2="536" class="wall-inner"/>
+  <line x1="700" y1="440" x2="700" y2="1063" class="wall-inner"/>
+  <line x1="700" y1="728" x2="883" y2="728" class="wall-inner"/>
+  <!-- living / corridor west edge under bedrooms (opening) -->
+  <line x1="420" y1="440" x2="420" y2="536" class="wall-inner"/>
+
+  <!-- Door openings (white gaps) + arcs -->
+  <!-- Bedroom 1 door to corridor from south -->
+  <line x1="250" y1="440" x2="310" y2="440" stroke="#fff8f0" stroke-width="10"/>
+  <path d="M250 440 A60 60 0 0 0 310 500" class="door-arc"/>
+  <!-- Actually bedroom1 south is at y=432 interior; door from bedroom to living via west corridor access -->
+  <!-- Bedroom 1 opens south into kitchen-living -->
+  <path d="M280 432 L280 372" stroke="#555" stroke-width="2"/>
+  <!-- Bedroom 2 door -->
+  <line x1="500" y1="440" x2="560" y2="440" stroke="#f5f5f5" stroke-width="10"/>
+  <path d="M500 440 A60 60 0 0 1 560 500" class="door-arc"/>
+  <!-- Bedroom 3 door -->
+  <line x1="720" y1="440" x2="780" y2="440" stroke="#f5f5f5" stroke-width="10"/>
+  <path d="M720 440 A60 60 0 0 1 780 500" class="door-arc"/>
+  <!-- Bathroom door -->
+  <line x1="700" y1="600" x2="700" y2="660" stroke="#eef6ff" stroke-width="10"/>
+  <path d="M700 600 A60 60 0 0 0 640 660" class="door-arc"/>
+  <!-- Hall to corridor -->
+  <line x1="700" y1="740" x2="700" y2="800" stroke="#fffaf0" stroke-width="10"/>
+  <!-- Opening living to corridor -->
+  <line x1="420" y1="460" x2="420" y2="520" stroke="#fffef5" stroke-width="10"/>
+
+  <!-- Outer dimension lines -->
+  <!-- Width 10.00 m -->
+  <line x1="90" y1="1120" x2="890" y2="1120" class="dim-line"/>
+  <line x1="90" y1="1110" x2="90" y2="1130" class="dim-line"/>
+  <line x1="890" y1="1110" x2="890" y2="1130" class="dim-line"/>
+  <text x="490" y="1145" text-anchor="middle" class="dim">10,00 <</text>
+
+  <!-- Depth 12.00 m -->
+  <line x1="50" y1="110" x2="50" y2="1070" class="dim-line"/>
+  <line x1="40" y1="110" x2="60" y2="110" class="dim-line"/>
+  <line x1="40" y1="1070" x2="60" y2="1070" class="dim-line"/>
+  <text x="28" y="600" text-anchor="middle" class="dim" transform="rotate(-90 28 600)">12,00 <</text>
+
+  <!-- North arrow -->
+  <g transform="translate(980,160)">
+    <polygon points="0,-36 10,10 -10,10" fill="#111"/>
+    <text x="0" y="32" text-anchor="middle" class="dim">!</text>
+  </g>
+
+  <!-- Legend / areas -->
+  <g transform="translate(920,280)">
+    <text x="0" y="0" class="room">-:A?;8:0F8O</text>
+    <text x="0" y="32" class="note">CE=O-3>AB8=0O && H 57 <²</text>
+    <text x="0" y="54" class="note">!?0;L=O 1 &&&&& 16,0 <²</text>
+    <text x="0" y="76" class="note">!?0;L=O 2 &&&&& 12,0 <²</text>
+    <text x="0" y="98" class="note">!?0;L=O 3 &&&&& 12,0 <²</text>
+    <text x="0" y="120" class="note">@8E>60O &&&&& H 9,0 <²</text>
+    <text x="0" y="142" class="note">!0=C75; &&&&&& 4,8 <²</text>
+    <text x="0" y="164" class="note">>@84>@ &&&&&& H 5,5 <²</text>
+    <text x="0" y="186" class="note">!B5=K/?@>Q<K && H 3,7 <²</text>
+    <text x="0" y="218" class="dim">B>3> (=0@C6=K5) 120 <²</text>
+    <text x="0" y="250" class="note">0AHB01 AE5<K 1 : 125</text>
+    <text x="0" y="272" class="note">(1 < = 80 px)</text>
+  </g>
+
+  <text x="90" y="1200" class="note">4=>MB06=K9 4><. E>4 A N30. :=0 A?0;5=  =0 A525@ 8 2>AB>:; :CE=O-3>AB8=0O  =0 70?04 8 N3.</text>
+  <text x="90" y="1224" class="note">'5@BQ6 MA:87=K9: 4;O AB@>8B5;LAB20 =C6=0 ?@82O7:0 : CG0AB:C, =5ACI85 AB5=K 8 8=65=5@=K5 A5B8.</text>
+</svg>
