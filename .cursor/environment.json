@@ -1,0 +1,4 @@
+{
+  "name": "AntishQ",
+  "install": "pip install --user --upgrade-strategy only-if-needed -r requirements.txt"
+}
